@@ -5,8 +5,6 @@
     apply:
       become: true
 
-- include_tasks: configure.yml
-
 - block:
     - include_tasks: csr.yml
     - include_tasks: sign.yml
